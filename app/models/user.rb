@@ -5,5 +5,5 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   has_many :ggists
-  has_many :comments
+  has_many :comments, as: :commentable
 end
